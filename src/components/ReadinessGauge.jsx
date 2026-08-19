@@ -1,11 +1,21 @@
+import { useState, useEffect } from 'react'
 import { useCountUp } from '../hooks/useCountUp'
 
 const RADIUS = 80
 const ARC_LENGTH = Math.PI * RADIUS // length of a semicircle
 
 export default function ReadinessGauge({ value, label = 'Career readiness' }) {
-  const animatedValue = useCountUp(value, 800)
-  const offset = ARC_LENGTH * (1 - value / 100)
+  const [mounted, setMounted] = useState(false)
+
+  useEffect(() => {
+    // Synchronize animation with hero entrance (wait ~300ms for dashboard to settle)
+    const t = setTimeout(() => setMounted(true), 300)
+    return () => clearTimeout(t)
+  }, [])
+
+  const targetValue = mounted ? value : 0
+  const animatedValue = useCountUp(targetValue, 1200)
+  const offset = ARC_LENGTH * (1 - targetValue / 100)
 
   return (
     <div className="gauge">
