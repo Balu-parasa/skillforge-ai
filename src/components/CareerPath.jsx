@@ -4,7 +4,7 @@ import { ROLES } from '../data/roles.js'
 import { useIntersectionObserver } from '../hooks/useIntersectionObserver'
 
 export default function CareerPath() {
-  const [activeId, setActiveId] = useState(ROLES[0].id)
+  const [activeId, setActiveId] = useState(ROLES[1].id)
   const active = ROLES.find((r) => r.id === activeId)
   const [ref, inView] = useIntersectionObserver()
 
