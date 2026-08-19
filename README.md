@@ -3,6 +3,19 @@
 Assignment: ACDYON Technologies internship assessment, Part 2 (Premium Home Page).
 Invented product: **SkillForge AI**, an AI-powered career growth platform for students.
 
+## Run locally
+
+```bash
+npm install
+npm run dev
+```
+
+Open the printed localhost URL. To produce a production build:
+
+```bash
+npm run build
+npm run preview
+```
 
 ## Deploying
 
