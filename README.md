@@ -1,4 +1,3 @@
-```markdown
 # SkillForge AI — Premium Home Page
 
 A landing page for **SkillForge AI**, an AI-powered career growth platform for students, built for the ACDYON Technologies internship assessment.
@@ -10,9 +9,8 @@ A landing page for **SkillForge AI**, an AI-powered career growth platform for s
 ### Local Development
 
 1. Install dependencies:
-   ```bash
-   npm install
-
+```bash
+npm install
 ```
 
 2. Start the development server:
@@ -79,5 +77,3 @@ SkillForge-AI/
 * **Interactive Preview:** Switching roles in the career path section re-renders the dashboard with that role's mock readiness score, skill breakdown, and recommendation via local `useState`.
 * **Lightweight Build:** Pure React and standard CSS tokens without extra UI component libraries, routing, or state management frameworks.
 * **Design System:** Paper-light theme with dark dashboard contrast, structured typography hierarchy, and CSS custom properties for maintainability.
-
-```
