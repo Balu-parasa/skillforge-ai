@@ -4,32 +4,6 @@ A landing page for **SkillForge AI**, an AI-powered career growth platform for s
 
 ---
 
-## Getting Started
-
-### Local Development
-
-1. Install dependencies:
-```bash
-npm install
-```
-
-2. Start the development server:
-```bash
-npm run dev
-
-```
-
-
-3. Build and preview for production:
-```bash
-npm run build
-npm run preview
-
-```
-
-
-
----
 
 ## Deployment
 
