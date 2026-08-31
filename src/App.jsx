@@ -14,7 +14,6 @@ export default function App() {
         <Hero />
         <CareerPath />
         <HowItWorks />
-        <Features />
         <FinalCTA />
       </main>
       <Footer />
