@@ -13,7 +13,8 @@ export default function App() {
       <main>
         <Hero />
         <CareerPath />
-        <HowItWorks />
+        <HowItWorks />        
+        <Features />
         <FinalCTA />
       </main>
       <Footer />
