@@ -70,7 +70,6 @@ SkillForge-AI/
 
 ```
 
----
 
 ## Key Features & Architecture
 
