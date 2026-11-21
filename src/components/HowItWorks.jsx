@@ -27,7 +27,14 @@ export default function HowItWorks() {
       <h2 className="section-title">Three steps, in order.</h2>
 
       <ol className={`how__list ${inView ? 'how__list--in-view' : ''}`}>
-        
+        {STEPS.map((step, i) => (
+          <li className="how__step" key={step.n} style={{'--delay': i}}>
+            <span className="how__index">{step.n}</span>
+            <h3 className="how__title">{step.title}</h3>
+            <p className="how__body">{step.body}</p>
+            {i < STEPS.length - 1 && <span className="how__connector" aria-hidden="true" />}
+          </li>
+        ))}
       </ol>
     </section>
   )
